@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text2Image - Generator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="light-mode">
+  <header>
+    <div class="logo">
+      <h1>Text<span>2</span>Image</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="text-image.html" class="active">Text-Image</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <button id="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="generator-section">
+      <h2>Text to Image Generator</h2>
+      <div class="generator-container">
+        <div class="input-area">
+          <textarea id="prompt-input" placeholder="Describe the image you want to create..."></textarea>
+          <button id="generate-btn">Generate Image</button>
+          <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <p>Creating your masterpiece...</p>
+          </div>
+        </div>
+        <div class="output-area">
+          <div id="image-container">
+            <div class="placeholder-message">
+              <i class="fas fa-image"></i>
+              <p>Your generated image will appear here</p>
+            </div>
+            <img id="generated-image" alt="Generated Image">
+          </div>
+          <div class="image-controls">
+            <button id="save-btn" disabled><i class="fas fa-download"></i> Save</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="generator-tips">
+        <h3>Tips for Better Results</h3>
+        <ul>
+          <li><strong>Be specific:</strong> Include details about style, lighting, colors, and composition</li>
+          <li><strong>Try different approaches:</strong> If you don't get the results you want, try rephrasing your prompt</li>
+          <li><strong>Include art styles:</strong> Terms like "digital art," "photorealistic," "watercolor," etc.</li>
+          <li><strong>Experiment:</strong> The AI responds differently to various phrasings</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>Text<span>2</span>Image</h2>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Text2Image. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/generator.js"></script>
+</body>
+</html> 
